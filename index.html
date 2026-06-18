@@ -1,1 +1,125 @@
-hello everyone here
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Animated Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4CAF50, #2E8B57);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      animation: fadeInDown 1.5s ease;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
+
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #4CAF50;
+    }
+
+    .hero {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('https://picsum.photos/1200/600') no-repeat center/cover;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      animation: fadeIn 2s ease;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      animation: slideUp 1.5s ease;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      animation: slideUp 2s ease;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes slideUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>Clean UI with animations</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero" id="home">
+    <h1>Hello Everyone!</h1>
+    <p>Building modern static sites with style</p>
+  </div>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>This is a sample static site with CSS animations and responsive design.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: example@example.com</p>
+    <p>Phone: +91-1234567890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
